@@ -9,7 +9,6 @@ const navItems = [
   { label: "トレーニング", href: "/#categories" },
   { label: "栄養", href: "/#categories" },
   { label: "ライフスタイル", href: "/#categories" },
-  { label: "無料購読", href: "/#newsletter", cta: true },
 ];
 
 export default function MobileMenu() {
@@ -55,7 +54,7 @@ export default function MobileMenu() {
             <li key={item.label}>
               <a
                 href={item.href}
-                className={`mobile-nav-link ${item.cta ? "mobile-nav-link--cta" : ""}`}
+                className="mobile-nav-link"
                 onClick={() => setOpen(false)}
               >
                 {item.label}

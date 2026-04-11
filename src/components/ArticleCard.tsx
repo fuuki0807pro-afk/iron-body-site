@@ -1,6 +1,4 @@
 // src/components/ArticleCard.tsx
-// 記事一覧グリッドで使う1枚のカードコンポーネント
-
 type Article = {
   slug: string;
   title: string;
@@ -8,13 +6,14 @@ type Article = {
   category: string;
   excerpt: string;
   image?: string;
+  readTime?: string;
 };
 
-const categoryConfig: Record<string, { tagClass: string; imgClass: string; label: string }> = {
-  "トレーニング": { tagClass: "tag--training",   imgClass: "",                          label: "TRAINING"   },
-  "栄養・食事":  { tagClass: "tag--nutrition",   imgClass: "article-card-image--nutrition",  label: "NUTRITION"  },
-  "サプリメント":{ tagClass: "tag--supplement",  imgClass: "article-card-image--supplement", label: "SUPPLEMENT" },
-  "ライフスタイル":{ tagClass: "tag--lifestyle", imgClass: "article-card-image--lifestyle",  label: "LIFESTYLE"  },
+const categoryConfig: Record<string, { tagClass: string; bgClass: string; label: string }> = {
+  "トレーニング":  { tagClass: "tag--training",   bgClass: "card-img-bg--training",   label: "TRAINING"   },
+  "栄養・食事":   { tagClass: "tag--nutrition",   bgClass: "card-img-bg--nutrition",   label: "NUTRITION"  },
+  "サプリメント": { tagClass: "tag--supplement",  bgClass: "card-img-bg--supplement",  label: "SUPPLEMENT" },
+  "ライフスタイル":{ tagClass: "tag--lifestyle",  bgClass: "card-img-bg--lifestyle",   label: "LIFESTYLE"  },
 };
 
 export default function ArticleCard({ article }: { article: Article }) {
@@ -23,8 +22,16 @@ export default function ArticleCard({ article }: { article: Article }) {
   return (
     <a href={`/articles/${article.slug}`} className="article-card">
       {/* サムネイル */}
-      <div className={`article-card-image ${config.imgClass}`}>
-        <span>{config.label}</span>
+      <div className={`article-card-image ${!article.image ? config.bgClass : ""}`}>
+        {article.image ? (
+          <img
+            src={article.image}
+            alt={article.title}
+            className="article-card-img"
+          />
+        ) : (
+          <span className="card-img-label">{config.label}</span>
+        )}
       </div>
 
       {/* 本文 */}

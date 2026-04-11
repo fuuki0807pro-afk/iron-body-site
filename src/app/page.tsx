@@ -58,9 +58,17 @@ export default function HomePage() {
             </div>
             <a href={`/articles/${featuredArticle.slug}`} className="featured-card">
               <div className="featured-card-image">
-                <div className="featured-card-img-placeholder">
-                  <span>TRAINING</span>
-                </div>
+                {featuredArticle.image ? (
+                  <img
+                    src={featuredArticle.image}
+                    alt={featuredArticle.title}
+                    className="featured-card-img"
+                  />
+                ) : (
+                  <div className="featured-card-img-placeholder">
+                    <span>TRAINING</span>
+                  </div>
+                )}
               </div>
               <div className="featured-card-body">
                 <span className="tag tag--training">{featuredArticle.category}</span>
@@ -79,36 +87,6 @@ export default function HomePage() {
       {/* カテゴリフィルター + 記事グリッド（クライアントコンポーネント） */}
       <CategoryFilter articles={regularArticles} />
 
-      {/* ニュースレター */}
-      <section id="newsletter" className="newsletter-section">
-        <div className="container">
-          <div className="newsletter-inner">
-            <div className="newsletter-text">
-              <p className="newsletter-eyebrow">NEWSLETTER</p>
-              <h2 className="newsletter-title">週1回、厳選情報を<br />無料でお届け</h2>
-              <p className="newsletter-desc">
-                トレーニング・栄養・最新研究のまとめを毎週月曜配信。
-              </p>
-              <ul className="newsletter-benefits">
-                <li>✔ 査読済み論文ベースの情報</li>
-                <li>✔ 競技者向けの専門コンテンツ</li>
-                <li>✔ スパムなし・いつでも解除可能</li>
-              </ul>
-            </div>
-            <div className="newsletter-form">
-              <div className="input-group">
-                <input
-                  type="email"
-                  placeholder="メールアドレスを入力"
-                  className="email-input"
-                />
-                <button className="btn-primary">登録する</button>
-              </div>
-              <p className="newsletter-note">いつでも配信停止できます。スパムは送りません。</p>
-            </div>
-          </div>
-        </div>
-      </section>
     </>
   );
 }

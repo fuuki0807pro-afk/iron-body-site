@@ -35,7 +35,7 @@ const beginnerStrengthTraining: Article = {
   category: "トレーニング",
   excerpt:
     "筋トレを始めたばかりの方へ。最初の3ヶ月で土台を作るためのプログラム設計・フォーム・休養のポイントを科学的根拠とともに解説します。",
-  image: "",
+  image: "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1200&auto=format&fit=crop",
   featured: true,
   readTime: "8分",
   tags: ["初心者", "プログラム設計", "フォーム"],
@@ -106,7 +106,7 @@ const squatFormGuide: Article = {
   category: "トレーニング",
   excerpt:
     "下半身の王様・スクワット。正しいフォームを身につけて怪我なく鍛えるための完全ガイドです。初心者から中級者まで役立つ内容。",
-  image: "",
+  image: "https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=1200&auto=format&fit=crop",
   readTime: "10分",
   tags: ["スクワット", "フォーム", "怪我予防"],
   contentHtml: `
@@ -126,7 +126,7 @@ const squatFormGuide: Article = {
     <p>「膝がつま先より前に出てはいけない」という俗説がありますが、これは誤りです。Ariel（1974）以降の研究で、<strong>膝がつま先より前に出ること自体は問題なく、むしろ膝への負荷は股関節に均等に分散するため内側への崩れの方が危険</strong>であることが明らかにされています<sup>[2]</sup>。</p>
 
     <h2>腰を守るための注意点</h2>
-    <p>腰痛の最大原因は<em>骨盤後傾（ブットウィンク）</em>です。深くしゃがんだ際に骨盤が後ろに丸まる現象で、腰椎椎間板に過度な圧力をかけます。股関節モビリティの改善と適切なウォームアップで予防できます<sup>[3]</sup>。</p>
+    <p>腰痛の最大原因は<em>骨盤後傾（バットウィンク）</em>です。深くしゃがんだ際に骨盤が後ろに丸まる現象で、腰椎椎間板に過度な圧力をかけます。股関節モビリティの改善と適切なウォームアップで予防できます<sup>[3]</sup>。</p>
 
     <h2>ウォームアップルーティン（5分）</h2>
     <ul>
@@ -171,7 +171,7 @@ const progressiveOverload: Article = {
   category: "トレーニング",
   excerpt:
     "「なぜ同じトレーニングを続けても筋肉が成長しなくなるのか」その答えが漸進性過負荷の原則にあります。科学的根拠に基づいた正しい負荷増加の方法を解説。",
-  image: "",
+  image: "https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?w=1200&auto=format&fit=crop",
   readTime: "7分",
   tags: ["プログレッシブオーバーロード", "筋肥大", "プログラム設計"],
   contentHtml: `
@@ -231,7 +231,7 @@ const hypertrophySetsReps: Article = {
   category: "トレーニング",
   excerpt:
     "「何セット・何レップやればいいのか」は多くの人が悩む問いです。Schoenfeld、Kriegerらの最新メタアナリシスをもとに、競技者向けの最適解を解説します。",
-  image: "",
+  image: "https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=1200&auto=format&fit=crop",
   readTime: "9分",
   tags: ["筋肥大", "セット数", "レップ数", "ボリューム"],
   contentHtml: `
@@ -302,7 +302,7 @@ const proteinTiming: Article = {
   category: "栄養・食事",
   excerpt:
     "トレーニング前・後・就寝前、それぞれのプロテイン摂取タイミングで筋肥大への影響はどう変わるのか。最新の研究を元に解説。",
-  image: "",
+  image: "https://images.unsplash.com/photo-1593095948071-474c5cc2989d?w=1200&auto=format&fit=crop",
   readTime: "8分",
   tags: ["プロテイン", "タイミング", "筋肥大"],
   contentHtml: `
@@ -361,7 +361,7 @@ const calorieDeficitMuscle: Article = {
   category: "栄養・食事",
   excerpt:
     "減量中に筋肉まで落ちてしまう――その悩みを解決するための、タンパク質量・食事回数・トレーニング頻度の最適解を提示します。",
-  image: "",
+  image: "https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=1200&auto=format&fit=crop",
   readTime: "9分",
   tags: ["減量", "カロリー制限", "筋肉維持", "食事設計"],
   contentHtml: `
@@ -427,7 +427,7 @@ const pfcBalance: Article = {
   category: "栄養・食事",
   excerpt:
     "タンパク質・脂質・炭水化物の最適な比率は、目的（増量・減量・維持）と競技ステージによって変わります。ISSNガイドラインをもとに科学的な食事設計を解説。",
-  image: "",
+  image: "https://images.unsplash.com/photo-1547592180-85f173990554?w=1200&auto=format&fit=crop",
   readTime: "10分",
   tags: ["PFCバランス", "栄養管理", "増量", "減量", "競技者"],
   contentHtml: `
@@ -502,7 +502,7 @@ const creatineEffects: Article = {
   category: "サプリメント",
   excerpt:
     "最も研究されたサプリメントの一つ、クレアチン。本当に効くのか？副作用は？どう摂れば良いのかを論文をベースに分かりやすく解説。",
-  image: "",
+  image: "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=1200&auto=format&fit=crop",
   readTime: "10分",
   tags: ["クレアチン", "サプリメント", "パフォーマンス向上"],
   contentHtml: `
@@ -577,7 +577,7 @@ const proteinPowderGuide: Article = {
   category: "サプリメント",
   excerpt:
     "ホエイ・カゼイン・ソイ・エンドウタンパク……どれを選べばいいのか。吸収速度・アミノ酸スコア・コスパを科学的に比較します。",
-  image: "",
+  image: "https://images.unsplash.com/photo-1579722820308-d74e571900a9?w=1200&auto=format&fit=crop",
   readTime: "8分",
   tags: ["プロテイン", "ホエイ", "カゼイン", "植物性", "サプリ選び"],
   contentHtml: `
@@ -645,7 +645,7 @@ const sleepMuscleGrowth: Article = {
   category: "ライフスタイル",
   excerpt:
     "筋肉はジムではなく、眠っている間に成長する。睡眠とテストステロン・成長ホルモンの関係と、今夜から実践できる睡眠改善法。",
-  image: "",
+  image: "https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?w=1200&auto=format&fit=crop",
   readTime: "8分",
   tags: ["睡眠", "回復", "成長ホルモン", "テストステロン"],
   contentHtml: `
@@ -702,7 +702,7 @@ const overtrainingPrevention: Article = {
   category: "ライフスタイル",
   excerpt:
     "「やればやるほど良い」は危険な思い込みです。オーバートレーニング症候群のサインを早期に察知し、適切に回復するための方法を解説します。",
-  image: "",
+  image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=1200&auto=format&fit=crop",
   readTime: "9分",
   tags: ["オーバートレーニング", "回復", "ライフスタイル", "競技者"],
   contentHtml: `

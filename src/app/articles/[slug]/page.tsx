@@ -70,11 +70,21 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
         </div>
       </header>
 
-      {/* 記事ヒーロー画像プレースホルダー */}
+      {/* 記事ヒーロー画像 */}
       <div className="container">
-        <div className={`article-hero-image article-hero-image--${article.category === "トレーニング" ? "training" : article.category === "栄養・食事" ? "nutrition" : article.category === "サプリメント" ? "supplement" : "lifestyle"}`}>
-          <span className="article-hero-label">{heroLabel}</span>
-        </div>
+        {article.image ? (
+          <div className="article-hero-image article-hero-image--photo">
+            <img
+              src={article.image}
+              alt={article.title}
+              className="article-hero-img"
+            />
+          </div>
+        ) : (
+          <div className={`article-hero-image article-hero-image--${article.category === "トレーニング" ? "training" : article.category === "栄養・食事" ? "nutrition" : article.category === "サプリメント" ? "supplement" : "lifestyle"}`}>
+            <span className="article-hero-label">{heroLabel}</span>
+          </div>
+        )}
       </div>
 
       {/* 本文 + サイドバー */}
@@ -110,13 +120,6 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
             </div>
           )}
 
-          {/* ニュースレター */}
-          <div className="sidebar-card sidebar-card--accent">
-            <p className="sidebar-newsletter-label">NEWSLETTER</p>
-            <h3 className="sidebar-title">週1回、厳選情報を無料配信</h3>
-            <input type="email" placeholder="メールアドレス" className="email-input email-input--sm" />
-            <button className="btn-primary btn-primary--full">登録する</button>
-          </div>
         </aside>
       </div>
 

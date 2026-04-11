@@ -19,7 +19,7 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link
-          href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans+JP:wght@400;500;700&family=DM+Sans:ital,wght@0,400;0,500;1,400&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;600;700&family=Noto+Sans+JP:wght@400;500;700&family=DM+Sans:ital,wght@0,400;0,500;1,400&display=swap"
           rel="stylesheet"
         />
       </head>
@@ -38,9 +38,6 @@ export default function RootLayout({
               <a href="/#categories" className="nav-link">栄養</a>
               <a href="/#categories" className="nav-link">ライフスタイル</a>
             </nav>
-            <a href="/#newsletter" className="header-cta">
-              無料購読
-            </a>
             {/* モバイルメニュー */}
             <MobileMenu />
           </div>
@@ -63,9 +60,7 @@ export default function RootLayout({
                 科学と鍛錬で、理想の身体へ。
               </p>
               <p className="footer-evidence-note">
-                掲載情報は査読済み論文・ISSN・NSCA等の
-                <br />
-                信頼性の高いソースに基づいています。
+                掲載情報は査読済み論文・ISSN・NSCA等の信頼性の高いソースに基づいています。
               </p>
             </div>
             <div className="footer-links">
