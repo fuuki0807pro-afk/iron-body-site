@@ -1,6 +1,7 @@
 // src/app/layout.tsx
 import type { Metadata } from "next";
 import "./style.css";
+import MobileMenu from "@/components/MobileMenu";
 
 export const metadata: Metadata = {
   title: "IRON BODY | ボディメイク専門メディア",
@@ -30,15 +31,18 @@ export default function RootLayout({
               <span className="logo-iron">IRON</span>
               <span className="logo-body">BODY</span>
             </a>
+            {/* デスクトップナビ */}
             <nav className="header-nav">
               <a href="/" className="nav-link">記事一覧</a>
-              <a href="/#training" className="nav-link">トレーニング</a>
-              <a href="/#nutrition" className="nav-link">栄養</a>
-              <a href="/#lifestyle" className="nav-link">ライフスタイル</a>
+              <a href="/#categories" className="nav-link">トレーニング</a>
+              <a href="/#categories" className="nav-link">栄養</a>
+              <a href="/#categories" className="nav-link">ライフスタイル</a>
             </nav>
             <a href="/#newsletter" className="header-cta">
               無料購読
             </a>
+            {/* モバイルメニュー */}
+            <MobileMenu />
           </div>
         </header>
 
@@ -58,14 +62,19 @@ export default function RootLayout({
               <p className="footer-tagline">
                 科学と鍛錬で、理想の身体へ。
               </p>
+              <p className="footer-evidence-note">
+                掲載情報は査読済み論文・ISSN・NSCA等の
+                <br />
+                信頼性の高いソースに基づいています。
+              </p>
             </div>
             <div className="footer-links">
               <div className="footer-col">
                 <h4 className="footer-col-title">カテゴリ</h4>
-                <a href="/#training" className="footer-link">トレーニング</a>
-                <a href="/#nutrition" className="footer-link">栄養・食事</a>
-                <a href="/#supplement" className="footer-link">サプリメント</a>
-                <a href="/#lifestyle" className="footer-link">ライフスタイル</a>
+                <a href="/#categories" className="footer-link">トレーニング</a>
+                <a href="/#categories" className="footer-link">栄養・食事</a>
+                <a href="/#categories" className="footer-link">サプリメント</a>
+                <a href="/#categories" className="footer-link">ライフスタイル</a>
               </div>
               <div className="footer-col">
                 <h4 className="footer-col-title">サイト情報</h4>
@@ -73,10 +82,16 @@ export default function RootLayout({
                 <a href="/privacy" className="footer-link">プライバシーポリシー</a>
                 <a href="/contact" className="footer-link">お問い合わせ</a>
               </div>
+              <div className="footer-col">
+                <h4 className="footer-col-title">エビデンスについて</h4>
+                <a href="https://pubmed.ncbi.nlm.nih.gov/" target="_blank" rel="noopener noreferrer" className="footer-link">PubMed</a>
+                <a href="https://www.issn.net/" target="_blank" rel="noopener noreferrer" className="footer-link">ISSN</a>
+                <a href="https://www.nsca.com/" target="_blank" rel="noopener noreferrer" className="footer-link">NSCA</a>
+              </div>
             </div>
           </div>
           <div className="footer-bottom">
-            <p>© 2026 IRON BODY. All rights reserved.</p>
+            <p>© 2026 IRON BODY. All rights reserved. 本サイトの情報は教育目的であり、医療的アドバイスの代替ではありません。</p>
           </div>
         </footer>
       </body>
