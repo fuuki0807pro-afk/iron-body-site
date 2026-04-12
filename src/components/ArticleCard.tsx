@@ -6,6 +6,7 @@ type Article = {
   category: string;
   excerpt: string;
   image?: string;
+  imageAlt?: string;
   readTime?: string;
 };
 
@@ -26,7 +27,7 @@ export default function ArticleCard({ article }: { article: Article }) {
         {article.image ? (
           <img
             src={article.image}
-            alt={article.title}
+            alt={article.imageAlt ?? article.title}
             className="article-card-img"
           />
         ) : (

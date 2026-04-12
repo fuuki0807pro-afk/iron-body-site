@@ -7,30 +7,35 @@
 
 /* ── CSS変数 ─────────────────────────────────────────────── */
 :root {
-  /* ベースカラー：温かみのあるクリーム系 */
-  --color-bg:          #faf8f4;
-  --color-bg-alt:      #f3efe8;
-  --color-bg-warm:     #eee8dd;
+  /* ベースカラー：クリーン＆クール */
+  --color-bg:          #f8fafc;
+  --color-bg-alt:      #f0f4f8;
+  --color-bg-warm:     #e8eef5;
   --color-surface:     #ffffff;
-  --color-border:      #ddd6cc;
-  --color-border-light:#ece7de;
+  --color-border:      #d1dbe8;
+  --color-border-light:#e2eaf3;
 
-  /* テキスト：柔らかいブラウン系 */
-  --color-text:        #2c2519;
-  --color-text-sub:    #6b5f52;
-  --color-text-muted:  #a09080;
+  /* テキスト：チャコール系 */
+  --color-text:        #1e293b;
+  --color-text-sub:    #4a5e78;
+  --color-text-muted:  #8a9bb0;
 
-  /* アクセント：テラコッタ / アンバー */
-  --color-accent:      #c2622a;       /* テラコッタ */
-  --color-accent-light:#e8834e;       /* 明るいテラコッタ */
-  --color-accent-dark: #9e4a1c;       /* 深みテラコッタ */
-  --color-accent-bg:   #fdf0e8;       /* 薄いアクセント背景 */
+  /* メインカラー：スレートネイビー */
+  --color-navy:        #1a2744;
+  --color-navy-mid:    #2d4a7a;
+  --color-navy-light:  #3d6090;
 
-  /* カテゴリカラー（落ち着いたトーン） */
-  --color-training:    #c2622a;       /* テラコッタ */
-  --color-nutrition:   #3a7d5a;       /* フォレストグリーン */
-  --color-supplement:  #2d5fa0;       /* デニムブルー */
-  --color-lifestyle:   #7a4a8a;       /* モーブパープル */
+  /* アクセント：エナジーグリーン */
+  --color-accent:      #00a846;       /* エナジーグリーン */
+  --color-accent-light:#00c853;       /* 明るいグリーン */
+  --color-accent-dark: #007a33;       /* 深みグリーン */
+  --color-accent-bg:   #e8f8ee;       /* 薄いグリーン背景 */
+
+  /* カテゴリカラー（スポーツ感ある明快なトーン） */
+  --color-training:    #e65c00;       /* エナジーオレンジ */
+  --color-nutrition:   #00a846;       /* グリーン */
+  --color-supplement:  #0ea5e9;       /* スカイブルー */
+  --color-lifestyle:   #7c3aed;       /* バイオレット */
 
   /* フォント */
   --font-display:      'Noto Serif JP', 'Georgia', serif;
@@ -41,12 +46,12 @@
   --container-width:   1160px;
   --container-pad:     clamp(1.25rem, 5vw, 2.5rem);
 
-  /* シャドウ（柔らかめ） */
-  --shadow-sm:         0 2px 8px rgba(44,37,25,.06);
-  --shadow-md:         0 6px 20px rgba(44,37,25,.09);
-  --shadow-lg:         0 12px 36px rgba(44,37,25,.12);
+  /* シャドウ */
+  --shadow-sm:         0 2px 8px rgba(26,39,68,.07);
+  --shadow-md:         0 6px 20px rgba(26,39,68,.10);
+  --shadow-lg:         0 12px 36px rgba(26,39,68,.13);
 
-  /* 角丸（少し丸め） */
+  /* 角丸 */
   --radius-sm:         6px;
   --radius-md:         12px;
   --radius-lg:         16px;
@@ -203,10 +208,10 @@ input { font-family: inherit; }
   border-radius: 100px;
   text-transform: uppercase;
 }
-.tag--training   { background: #fde8d8; color: var(--color-training); }
-.tag--nutrition  { background: #d6f0e2; color: var(--color-nutrition); }
-.tag--supplement { background: #d8e8f8; color: var(--color-supplement); }
-.tag--lifestyle  { background: #ead8f0; color: var(--color-lifestyle); }
+.tag--training   { background: #fff0e6; color: var(--color-training); }
+.tag--nutrition  { background: #e6f9ef; color: var(--color-accent-dark); }
+.tag--supplement { background: #e0f4fd; color: #0369a1; }
+.tag--lifestyle  { background: #ede9fe; color: var(--color-lifestyle); }
 .tag--sm { font-size: 0.65rem; padding: 0.15rem 0.55rem; }
 
 /* ── セクション共通ラベル ────────────────────────────────── */
@@ -244,7 +249,7 @@ input { font-family: inherit; }
 .hero {
   position: relative;
   overflow: hidden;
-  background: var(--color-text);
+  background: var(--color-navy);
   color: #fff;
   padding: clamp(4.5rem, 11vw, 9rem) var(--container-pad) clamp(3.5rem, 8vw, 6.5rem);
   display: flex;
@@ -280,7 +285,7 @@ input { font-family: inherit; }
   font-size: 0.78rem;
   letter-spacing: 0.22em;
   text-transform: uppercase;
-  color: var(--color-accent-light);
+  color: #4ade80;
   margin-bottom: 1.25rem;
 }
 
@@ -294,7 +299,7 @@ input { font-family: inherit; }
 }
 .hero-title em {
   font-style: normal;
-  color: var(--color-accent-light);
+  color: #4ade80;
 }
 
 .hero-desc {
@@ -330,7 +335,7 @@ input { font-family: inherit; }
   font-family: var(--font-display);
   font-size: 2rem;
   line-height: 1;
-  color: var(--color-accent-light);
+  color: #4ade80;
   letter-spacing: 0.03em;
 }
 .stat-plus { font-size: 1.3rem; }
@@ -366,7 +371,7 @@ input { font-family: inherit; }
 }
 
 .featured-card-image {
-  background: linear-gradient(135deg, #2c2519 0%, #5a3a20 50%, #8a4d28 100%);
+  background: linear-gradient(135deg, #1a2744 0%, #2d4a7a 60%, #1a7a4a 100%);
   min-height: 380px;
   display: flex;
   align-items: center;
@@ -517,10 +522,10 @@ input { font-family: inherit; }
   overflow: hidden;
   background: var(--color-bg-warm);
 }
-.card-img-bg--training   { background: linear-gradient(135deg, #3a2010, #6b3820); }
-.card-img-bg--nutrition  { background: linear-gradient(135deg, #0d2e18, #1a5c30); }
-.card-img-bg--supplement { background: linear-gradient(135deg, #0d1e3a, #1a3c7a); }
-.card-img-bg--lifestyle  { background: linear-gradient(135deg, #1e0d2e, #3d1a6e); }
+.card-img-bg--training   { background: linear-gradient(135deg, #7c1a00, #c23d00); }
+.card-img-bg--nutrition  { background: linear-gradient(135deg, #004d1f, #007a33); }
+.card-img-bg--supplement { background: linear-gradient(135deg, #0a3a6e, #0ea5e9); }
+.card-img-bg--lifestyle  { background: linear-gradient(135deg, #2d0a6e, #7c3aed); }
 
 .article-card-img {
   width: 100%;
@@ -586,7 +591,7 @@ input { font-family: inherit; }
 
 /* ── フッター ─────────────────────────────────────────────── */
 .site-footer {
-  background: #201a13;
+  background: #0f1929;
   color: rgba(255,255,255,.6);
   padding-top: 4rem;
   margin-top: 4rem;
@@ -638,7 +643,7 @@ input { font-family: inherit; }
   font-weight: 700;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: var(--color-accent-light);
+  color: #4ade80;
   margin-bottom: 0.3rem;
   font-family: var(--font-en);
 }
@@ -677,7 +682,7 @@ input { font-family: inherit; }
 .breadcrumb-current { color: var(--color-text-sub); }
 
 .article-header {
-  background: var(--color-text);
+  background: var(--color-navy);
   color: #fff;
   padding: 4rem 0 3.5rem;
 }
@@ -727,10 +732,10 @@ input { font-family: inherit; }
   overflow: hidden;
 }
 .article-hero-image--photo { background: var(--color-bg-warm); }
-.article-hero-image--training  { background: linear-gradient(135deg, #2c2519 0%, #5a3a20 50%, #8a4d28 100%); }
-.article-hero-image--nutrition { background: linear-gradient(135deg, #0a2410, #155c28, #1e7a35); }
-.article-hero-image--supplement{ background: linear-gradient(135deg, #0d1e3a, #1a3c7a, #2350aa); }
-.article-hero-image--lifestyle { background: linear-gradient(135deg, #1e0d2e, #3d1a6e, #5a2a9a); }
+.article-hero-image--training  { background: linear-gradient(135deg, #7c1a00, #c23d00, #e65c00); }
+.article-hero-image--nutrition { background: linear-gradient(135deg, #004d1f, #007a33, #00a846); }
+.article-hero-image--supplement{ background: linear-gradient(135deg, #0a3a6e, #0369a1, #0ea5e9); }
+.article-hero-image--lifestyle { background: linear-gradient(135deg, #2d0a6e, #5b21b6, #7c3aed); }
 
 .article-hero-img {
   width: 100%;
@@ -843,7 +848,7 @@ input { font-family: inherit; }
 }
 
 .sidebar-card--accent {
-  background: var(--color-text);
+  background: var(--color-navy);
   border-color: transparent;
   color: #fff;
 }

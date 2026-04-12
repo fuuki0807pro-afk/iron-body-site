@@ -13,16 +13,16 @@ export default function HomePage() {
       <section className="hero">
         <div className="hero-bg-text">IRON</div>
         <div className="hero-content">
-          <p className="hero-eyebrow">科学的ボディメイクの専門メディア</p>
+          <p className="hero-eyebrow">Japan&apos;s Evidence-Based Bodybuilding Media</p>
           <h1 className="hero-title">
-            鍛える知識が、
+            科学で鍛える。
             <br />
-            <em>身体を変える。</em>
+            <em>論文で食べる。</em>
           </h1>
           <p className="hero-desc">
-            トレーニング・栄養・サプリメント・ライフスタイル。
+            トレーニング・栄養・サプリメントの最新エビデンスを、
             <br />
-            エビデンスに基づいた情報で理想の身体を手に入れる。
+            競技者目線でわかりやすく届ける日本のボディメイク専門メディア。
           </p>
           <div className="hero-actions">
             <a href="#articles" className="btn-primary">記事を読む</a>

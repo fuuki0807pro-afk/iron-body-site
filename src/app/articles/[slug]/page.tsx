@@ -76,7 +76,7 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
           <div className="article-hero-image article-hero-image--photo">
             <img
               src={article.image}
-              alt={article.title}
+              alt={article.imageAlt ?? article.title}
               className="article-hero-img"
             />
           </div>
