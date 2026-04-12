@@ -17,7 +17,7 @@ export default function HomePage() {
           <h1 className="hero-title">
             科学で鍛える。
             <br />
-            <em>論文で食べる。</em>
+            <em>論文で整える。</em>
           </h1>
           <p className="hero-desc">
             トレーニング・栄養・サプリメントの最新エビデンスを、
