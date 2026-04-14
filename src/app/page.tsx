@@ -14,7 +14,7 @@ export default function HomePage() {
         <div className="hero-bg-text">IRON</div>
         <div className="hero-content">
           <p className="hero-eyebrow">Japan&apos;s Evidence-Based Bodybuilding Media</p>
-          <h1 className="hero-title">科学的データを味方に鍛える</h1>>
+          <h1 className="hero-title">科学的データを味方に鍛える</h1>
           <p className="hero-desc">
             トレーニング・栄養・サプリメントの最新エビデンスを、
             <br />
