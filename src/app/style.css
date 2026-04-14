@@ -373,6 +373,7 @@ input { font-family: inherit; }
 .featured-card-image {
   background: linear-gradient(135deg, #1a2744 0%, #2d4a7a 60%, #1a7a4a 100%);
   min-height: 380px;
+  max-height: 480px;
   display: flex;
   align-items: center;
   justify-content: center;

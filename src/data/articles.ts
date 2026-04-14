@@ -119,7 +119,7 @@ const squatFormGuide: Article = {
   category: "トレーニング",
   excerpt:
     "下半身の王様・スクワット。正しいフォームを身につけて怪我なく鍛えるための完全ガイドです。初心者から中級者まで役立つ内容。",
-  image: "https://images.unsplash.com/photo-fTbktIYS6sg?w=1200&auto=format&fit=crop",
+  image: "https://images.unsplash.com/photo-1549060279-7e168fcee0c2?w=1200&auto=format&fit=crop",
   imageAlt: "バーベルを担いでスクワットをしているトレーニング風景",
   readTime: "10分",
   tags: ["スクワット", "フォーム", "怪我予防"],
@@ -194,7 +194,7 @@ const progressiveOverload: Article = {
   category: "トレーニング",
   excerpt:
     "「なぜ同じトレーニングを続けても筋肉が成長しなくなるのか」その答えが漸進性過負荷の原則にあります。科学的根拠に基づいた正しい負荷増加の方法を解説。",
-  image: "https://images.unsplash.com/photo-vjkM-0m34KU?w=1200&auto=format&fit=crop",
+  image: "https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=1200&auto=format&fit=crop",
   imageAlt: "バーベルにウェイトプレートを追加して重量を増やしているシーン",
   readTime: "7分",
   tags: ["プログレッシブオーバーロード", "筋肥大", "プログラム設計"],
@@ -264,7 +264,7 @@ const hypertrophySetsReps: Article = {
   category: "トレーニング",
   excerpt:
     "「何セット・何レップやればいいのか」は多くの人が悩む問いです。Schoenfeld、Kriegerらの最新メタアナリシスをもとに、競技者向けの最適解を解説します。",
-  image: "https://images.unsplash.com/photo-qZ-U9z4TQ6A?w=1200&auto=format&fit=crop",
+  image: "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1200&auto=format&fit=crop",
   imageAlt: "ジムでダンベルを使って筋肥大トレーニングをしている様子",
   readTime: "9分",
   tags: ["筋肥大", "セット数", "レップ数", "ボリューム"],
@@ -338,7 +338,7 @@ const proteinTiming: Article = {
   category: "栄養・食事",
   excerpt:
     "トレーニング前・後・就寝前、それぞれのプロテイン摂取タイミングで筋肥大への影響はどう変わるのか。最新の研究を元に解説。",
-  image: "https://images.unsplash.com/photo-4CzpHxVzTFA?w=1200&auto=format&fit=crop",
+  image: "https://images.unsplash.com/photo-1571019613914-85f342c6a11e?w=1200&auto=format&fit=crop",
   imageAlt: "プロテインパウダーのコンテナとスプーン、タンパク質サプリメント",
   readTime: "8分",
   tags: ["プロテイン", "タイミング", "筋肥大"],
@@ -402,7 +402,7 @@ const calorieDeficitMuscle: Article = {
   category: "栄養・食事",
   excerpt:
     "減量中に筋肉まで落ちてしまう――その悩みを解決するための、タンパク質量・食事回数・トレーニング頻度の最適解を提示します。",
-  image: "https://images.unsplash.com/photo-yF2Gkkwd6Ak?w=1200&auto=format&fit=crop",
+  image: "https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=1200&auto=format&fit=crop",
   imageAlt: "高タンパクな減量食として鶏むね肉とブロッコリーを盛り付けたヘルシーな食事",
   readTime: "9分",
   tags: ["減量", "カロリー制限", "筋肉維持", "食事設計"],
@@ -544,7 +544,7 @@ const creatineEffects: Article = {
   category: "サプリメント",
   excerpt:
     "最も研究されたサプリメントの一つ、クレアチン。本当に効くのか？副作用は？どう摂れば良いのかを論文をベースに分かりやすく解説。",
-  image: "https://images.unsplash.com/photo-lVZGEyL_j40?w=1200&auto=format&fit=crop",
+  image: "https://images.unsplash.com/photo-1593095948071-474c5cc2989d?w=1200&auto=format&fit=crop",
   imageAlt: "クレアチンのボトルとスプーン、サプリメントパウダー",
   readTime: "10分",
   tags: ["クレアチン", "サプリメント", "パフォーマンス向上"],
@@ -694,7 +694,7 @@ const sleepMuscleGrowth: Article = {
   category: "ライフスタイル",
   excerpt:
     "筋肉はジムではなく、眠っている間に成長する。睡眠とテストステロン・成長ホルモンの関係と、今夜から実践できる睡眠改善法。",
-  image: "https://images.unsplash.com/photo-poFg8UOTNDY?w=1200&auto=format&fit=crop",
+  image: "https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?w=1200&auto=format&fit=crop",
   imageAlt: "質の良い睡眠でトレーニングからの回復を促している様子",
   readTime: "8分",
   tags: ["睡眠", "回復", "成長ホルモン", "テストステロン"],
@@ -761,7 +761,7 @@ const overtrainingPrevention: Article = {
   category: "ライフスタイル",
   excerpt:
     "「やればやるほど良い」は危険な思い込みです。オーバートレーニング症候群のサインを早期に察知し、適切に回復するための方法を解説します。",
-  image: "https://images.unsplash.com/photo-IEYz_OMSkdM?w=1200&auto=format&fit=crop",
+  image: "https://images.unsplash.com/photo-1571731956672-f2b94d7dd0cb?w=1200&auto=format&fit=crop",
   imageAlt: "ジムのベンチに疲れて座っている男性、オーバートレーニングのイメージ",
   readTime: "9分",
   tags: ["オーバートレーニング", "回復", "ライフスタイル", "競技者"],
