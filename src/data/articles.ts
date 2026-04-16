@@ -119,8 +119,8 @@ const squatFormGuide: Article = {
   category: "トレーニング",
   excerpt:
     "下半身の王様・スクワット。正しいフォームを身につけて怪我なく鍛えるための完全ガイドです。初心者から中級者まで役立つ内容。",
-  image: "https://images.unsplash.com/photo-1549060279-7e168fcee0c2?w=1200&auto=format&fit=crop",
-  imageAlt: "バーベルを担いでスクワットをしているトレーニング風景",
+  image: "https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?w=1200&auto=format&fit=crop",
+  imageAlt: "バーベルを担いでスクワットラックに向かう女性のトレーニング風景",
   readTime: "10分",
   tags: ["スクワット", "フォーム", "怪我予防"],
   contentHtml: `
