@@ -36,8 +36,8 @@ const beginnerStrengthTraining: Article = {
   category: "トレーニング",
   excerpt:
     "筋トレを始めたばかりの方へ。最初の3ヶ月で土台を作るためのプログラム設計・フォーム・休養のポイントを科学的根拠とともに解説します。",
-  image: "https://images.unsplash.com/photo-1567013127542-490d757e51fc?w=1200&auto=format&fit=crop",
-  imageAlt: "ジムでバトルロープトレーニングをしているアジア系男性アスリート",
+  image: "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=1200&auto=format&fit=crop",
+  imageAlt: "ジムのダンベルを使ったウェイトトレーニングの様子",
   featured: true,
   readTime: "8分",
   tags: ["初心者", "プログラム設計", "フォーム"],
@@ -338,8 +338,8 @@ const proteinTiming: Article = {
   category: "栄養・食事",
   excerpt:
     "トレーニング前・後・就寝前、それぞれのプロテイン摂取タイミングで筋肥大への影響はどう変わるのか。最新の研究を元に解説。",
-  image: "https://images.unsplash.com/photo-1571019613914-85f342c6a11e?w=1200&auto=format&fit=crop",
-  imageAlt: "プロテインパウダーのコンテナとスプーン、タンパク質サプリメント",
+  image: "https://images.unsplash.com/photo-1595348020949-87cdfbb44174?w=1200&auto=format&fit=crop",
+  imageAlt: "ジムのシェイカーボトルとトレーニング後のプロテイン摂取シーン",
   readTime: "8分",
   tags: ["プロテイン", "タイミング", "筋肥大"],
   contentHtml: `
@@ -618,8 +618,8 @@ const proteinPowderGuide: Article = {
   category: "サプリメント",
   excerpt:
     "ホエイ・カゼイン・ソイ・エンドウタンパク……どれを選べばいいのか。吸収速度・アミノ酸スコア・コスパを科学的に比較します。",
-  image: "https://images.unsplash.com/photo-1546483875-ad9014c88eba?w=1200&auto=format&fit=crop",
-  imageAlt: "ホエイプロテインパウダーのジャーとスクープ、サプリメント比較",
+  image: "https://images.unsplash.com/photo-1610725664285-7c57e6eeac3f?w=1200&auto=format&fit=crop",
+  imageAlt: "プロテインパウダーの袋とスクープ、ホエイ・植物性サプリメント比較",
   readTime: "8分",
   tags: ["プロテイン", "ホエイ", "カゼイン", "植物性", "サプリ選び"],
   contentHtml: `
@@ -761,8 +761,8 @@ const overtrainingPrevention: Article = {
   category: "ライフスタイル",
   excerpt:
     "「やればやるほど良い」は危険な思い込みです。オーバートレーニング症候群のサインを早期に察知し、適切に回復するための方法を解説します。",
-  image: "https://images.unsplash.com/photo-1571731956672-f2b94d7dd0cb?w=1200&auto=format&fit=crop",
-  imageAlt: "ジムのベンチに疲れて座っている男性、オーバートレーニングのイメージ",
+  image: "https://images.unsplash.com/photo-1579758629938-03607ccdbaba?w=1200&auto=format&fit=crop",
+  imageAlt: "ジムの床に疲弊して座り込んでいるアスリート、オーバートレーニングのイメージ",
   readTime: "9分",
   tags: ["オーバートレーニング", "回復", "ライフスタイル", "競技者"],
   contentHtml: `
