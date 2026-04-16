@@ -36,8 +36,8 @@ const beginnerStrengthTraining: Article = {
   category: "トレーニング",
   excerpt:
     "筋トレを始めたばかりの方へ。最初の3ヶ月で土台を作るためのプログラム設計・フォーム・休養のポイントを科学的根拠とともに解説します。",
-  image: "https://images.unsplash.com/photo-1576678927484-cc907957088c?w=1200&auto=format&fit=crop",
-  imageAlt: "ジムでバーベルを使ったトレーニングをしている様子",
+  image: "https://images.unsplash.com/photo-1567013127542-490d757e51fc?w=1200&auto=format&fit=crop",
+  imageAlt: "ジムでバトルロープトレーニングをしているアジア系男性アスリート",
   featured: true,
   readTime: "8分",
   tags: ["初心者", "プログラム設計", "フォーム"],
@@ -618,7 +618,7 @@ const proteinPowderGuide: Article = {
   category: "サプリメント",
   excerpt:
     "ホエイ・カゼイン・ソイ・エンドウタンパク……どれを選べばいいのか。吸収速度・アミノ酸スコア・コスパを科学的に比較します。",
-  image: "https://images.unsplash.com/photo-R23MqZKCBcM?w=1200&auto=format&fit=crop",
+  image: "https://images.unsplash.com/photo-1579722820903-bc4cf6c0ca65?w=1200&auto=format&fit=crop",
   imageAlt: "ホエイプロテインパウダーのジャーとスクープ、サプリメント比較",
   readTime: "8分",
   tags: ["プロテイン", "ホエイ", "カゼイン", "植物性", "サプリ選び"],
