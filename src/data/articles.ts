@@ -618,7 +618,7 @@ const proteinPowderGuide: Article = {
   category: "サプリメント",
   excerpt:
     "ホエイ・カゼイン・ソイ・エンドウタンパク……どれを選べばいいのか。吸収速度・アミノ酸スコア・コスパを科学的に比較します。",
-  image: "https://images.unsplash.com/photo-1579722820903-bc4cf6c0ca65?w=1200&auto=format&fit=crop",
+  image: "https://images.unsplash.com/photo-1546483875-ad9014c88eba?w=1200&auto=format&fit=crop",
   imageAlt: "ホエイプロテインパウダーのジャーとスクープ、サプリメント比較",
   readTime: "8分",
   tags: ["プロテイン", "ホエイ", "カゼイン", "植物性", "サプリ選び"],
