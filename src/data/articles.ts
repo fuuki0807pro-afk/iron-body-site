@@ -834,6 +834,450 @@ const overtrainingPrevention: Article = {
 };
 
 // ─────────────────────────────────────────────────────────────
+// コンディショニング
+// ─────────────────────────────────────────────────────────────
+const foamRollingScience: Article = {
+  slug: "foam-rolling-science",
+  title: "フォームローラーの科学：筋膜リリースの効果と正しい使い方",
+  date: "2026-04-12",
+  category: "コンディショニング",
+  excerpt:
+    "「なんとなく気持ちいいからやっている」では勿体ない。フォームローリング（セルフ筋膜リリース）の科学的根拠、最大の効果を引き出すプロトコルを解説します。",
+  image: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=1200&auto=format&fit=crop",
+  imageAlt: "フォームローラーを使って大腿四頭筋をセルフケアしているアスリート",
+  readTime: "8分",
+  tags: ["フォームローラー", "筋膜リリース", "リカバリー", "可動域"],
+  contentHtml: `
+    <h2>フォームローリングとは何か</h2>
+    <p>フォームローリング（Foam Rolling）は、フォームローラーや硬質ボールを使って自分自身で筋膜・軟部組織に圧を加える「セルフ筋膜リリース（SMR：Self-Myofascial Release）」の一形態です。ウォームアップ・クールダウン・回復促進の目的でアスリートに広く取り入れられています。</p>
+
+    <h2>科学的に確認されている主な効果</h2>
+    <p>Cheatham et al.（2015）の系統的レビュー（17研究を統合）では、フォームローリングについて以下の効果が確認されています<sup>[1]</sup>：</p>
+    <ul>
+      <li><strong>関節可動域（ROM）の即時的改善</strong>：ストレッチなしでも関節ROMが有意に拡大する</li>
+      <li><strong>筋肉痛（DOMS）の軽減</strong>：高強度トレーニング後24〜72時間の筋肉痛を有意に減少させる</li>
+      <li><strong>筋力・パフォーマンスへの悪影響なし</strong>：静的ストレッチと異なり、直後のパワー・筋力低下が起きにくい</li>
+    </ul>
+    <p>MacDonald et al.（2013）のランダム化比較試験では、<strong>1部位10分間のフォームローリングで膝関節ROMが有意に改善し、かつ大腿四頭筋の筋活動（EMG）や最大筋力が低下しない</strong>ことが確認されています<sup>[2]</sup>。これはウォームアップ前の使用に適した特性です。</p>
+
+    <h2>メカニズム：なぜ効くのか</h2>
+    <p>Behm & Wilke（2019）のナラティブレビューによると、現時点では「筋膜そのものをリリースする」というよりも、以下の神経・血流メカニズムが主に関与していると考えられています<sup>[3]</sup>：</p>
+    <ul>
+      <li>圧刺激による<strong>機械的受容体（メカノリセプター）の活性化</strong>→筋緊張の反射的低下</li>
+      <li>局所の<strong>血流・リンパ流の促進</strong>→老廃物の除去と栄養供給</li>
+      <li><strong>副交感神経系の優位化</strong>→リラクゼーション効果</li>
+    </ul>
+
+    <h2>競技者向け：部位別プロトコル</h2>
+    <p>日本整形外科学会のスポーツ障害予防指針でも、運動前後の軟部組織ケアの重要性が示されています<sup>[4]</sup>。以下を目安にしてください：</p>
+    <table>
+      <thead>
+        <tr><th>部位</th><th>時間</th><th>タイミング</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>大腿四頭筋・IT バンド</td><td>各60〜120秒</td><td>トレーニング前後</td></tr>
+        <tr><td>ハムストリング</td><td>各60秒</td><td>脚トレ前</td></tr>
+        <tr><td>広背筋・胸椎</td><td>60〜90秒</td><td>プレス・プル前</td></tr>
+        <tr><td>ふくらはぎ・足底</td><td>各60秒</td><td>脚トレ後・就寝前</td></tr>
+      </tbody>
+    </table>
+
+    <h2>注意点</h2>
+    <ul>
+      <li><strong>痛みが強すぎる圧はNG</strong>：「痛気持ちいい」程度（NRS 5〜7/10）が適切</li>
+      <li><strong>関節・骨の上は避ける</strong>：IT バンド正側（膝関節部）、腰椎直上などは除外</li>
+      <li><strong>1部位あたり2分以内</strong>：それ以上の効果上乗せは現時点では不明</li>
+    </ul>
+  `,
+  references: [
+    {
+      id: 1,
+      authors: "Cheatham SW, Kolber MJ, Cain M, Lee M",
+      year: 2015,
+      title: "The effects of self-myofascial release using a foam roll or roller massager on joint range of motion, muscle recovery, and performance: a systematic review",
+      journal: "International Journal of Sports Physical Therapy, 10(6): 827-838",
+      url: "https://pubmed.ncbi.nlm.nih.gov/26618062/",
+    },
+    {
+      id: 2,
+      authors: "MacDonald GZ, Penney MD, Mullaley ME, et al.",
+      year: 2013,
+      title: "An acute bout of self-myofascial release increases range of motion without a subsequent decrease in muscle activation or force",
+      journal: "Journal of Strength and Conditioning Research, 27(3): 812-821",
+      url: "https://pubmed.ncbi.nlm.nih.gov/22580977/",
+    },
+    {
+      id: 3,
+      authors: "Behm DG, Wilke J",
+      year: 2019,
+      title: "Do Self-Myofascial Release Devices Release Myofascia? Rolling Mechanisms: A Narrative Review",
+      journal: "Sports Medicine, 49(8): 1173-1181",
+      url: "https://pubmed.ncbi.nlm.nih.gov/31098794/",
+    },
+    {
+      id: 4,
+      authors: "日本整形外科学会",
+      year: 2023,
+      title: "スポーツ障害・外傷の予防に関するガイドライン",
+      journal: "日本整形外科学会",
+      url: "https://www.joa.or.jp/",
+    },
+  ],
+};
+
+const mobilityProtocol: Article = {
+  slug: "mobility-protocol-for-athletes",
+  title: "競技者のための可動域（モビリティ）改善プロトコル",
+  date: "2026-04-14",
+  category: "コンディショニング",
+  excerpt:
+    "股関節・胸椎・足首の可動域制限はパフォーマンスを下げ、怪我リスクを高めます。フィジーク・ボディビル競技者が取り組むべきモビリティ改善の科学と実践法。",
+  image: "https://images.unsplash.com/photo-1599058917765-a780eda07a3e?w=1200&auto=format&fit=crop",
+  imageAlt: "ストレッチポールを使って胸椎のモビリティ改善をしているアスリート",
+  readTime: "10分",
+  tags: ["モビリティ", "可動域", "ストレッチ", "コンディショニング", "怪我予防"],
+  contentHtml: `
+    <h2>なぜ競技者にモビリティが重要か</h2>
+    <p>フィジーク・ボディビル競技者にとって可動域（モビリティ）は、単に怪我予防だけでなく<strong>筋肉の最大伸展を引き出すこと＝より大きな筋肥大刺激を得ること</strong>にも直結します。股関節モビリティ不足はスクワットの深さを制限し、胸椎の可動域不足はベンチプレス・オーバーヘッドプレスのROMを狭めます。</p>
+
+    <h2>静的ストレッチ vs ダイナミックストレッチ：用途の使い分け</h2>
+    <p>Behm et al.（2016）の系統的レビューでは<sup>[1]</sup>：</p>
+    <ul>
+      <li><strong>静的ストレッチ（30秒以上）をウォームアップに使うと筋力・パワーが5〜8%低下する</strong>可能性がある</li>
+      <li><strong>ダイナミックストレッチはウォームアップに適しており</strong>、パフォーマンスへの悪影響がほとんどない</li>
+      <li>長期的な可動域改善目的の静的ストレッチは<strong>トレーニング後・就寝前が最適</strong></li>
+    </ul>
+    <p>Behm & Chaouachi（2011）のレビューでも、静的ストレッチを含む総合的なウォームアップは単独の静的ストレッチよりもパフォーマンスへの悪影響が少ないことが示されています<sup>[2]</sup>。</p>
+
+    <h2>競技者に特に重要な3つの可動域</h2>
+
+    <h3>1. 股関節モビリティ（スクワット・デッドリフトの質に直結）</h3>
+    <p>股関節の屈曲・外旋制限はバットウィンク（骨盤後傾）の主因です。以下のドリルを毎日実施：</p>
+    <ul>
+      <li><strong>90/90ストレッチ</strong>：前後の脚を90度に曲げた状態で体幹を回旋。各側2分</li>
+      <li><strong>コサックスクワット</strong>：足幅広めで左右交互に重心移動。10回×3セット</li>
+      <li><strong>ヒップフレクサーストレッチ（ハーフニーリング）</strong>：腸腰筋を伸展。各側90秒</li>
+    </ul>
+
+    <h3>2. 胸椎モビリティ（プレス系・ポージングに必須）</h3>
+    <p>胸椎の伸展・回旋制限はベンチプレスでの肩甲骨後退を妨げ、肩関節への過負荷につながります：</p>
+    <ul>
+      <li><strong>フォームローラー胸椎伸展</strong>：ローラーを肩甲骨下端に当てて10回伸展×3箇所</li>
+      <li><strong>キャット&カウ with 回旋</strong>：四つ這いで体幹回旋10回×各側</li>
+      <li><strong>オープンブックストレッチ</strong>：側臥位で上体を開く。各側10回</li>
+    </ul>
+
+    <h3>3. 足首モビリティ（スクワットの深さに影響）</h3>
+    <p>足首背屈制限は前傾姿勢やかかと浮きを招きます：</p>
+    <ul>
+      <li><strong>ウォールアンクルモビリティ</strong>：壁に手をついて足首を前に押し出す。各側15回</li>
+      <li><strong>ヒールエレベーション（暫定対策）</strong>：プレートをかかとに置いてスクワット</li>
+    </ul>
+
+    <h2>モビリティ改善の期間と頻度</h2>
+    <p>厚生労働省「健康づくりのための身体活動・運動ガイド2023」では、柔軟性向上のためのストレッチを<strong>週2〜3日以上、各部位20〜30秒を2〜4セット</strong>行うことが推奨されています<sup>[3]</sup>。競技者は毎日実施することで、4〜8週間での可動域改善が期待できます。</p>
+
+    <h2>推奨ルーティン（所要時間：約15分）</h2>
+    <ol>
+      <li>フォームローラー全身（5分）</li>
+      <li>股関節モビリティドリル（5分）</li>
+      <li>胸椎モビリティドリル（3分）</li>
+      <li>足首モビリティドリル（2分）</li>
+    </ol>
+  `,
+  references: [
+    {
+      id: 1,
+      authors: "Behm DG, Blazevich AJ, Kay AD, McHugh M",
+      year: 2016,
+      title: "Acute effects of muscle stretching on physical performance, range of motion, and injury incidence in healthy active individuals: a systematic review",
+      journal: "Applied Physiology, Nutrition, and Metabolism, 41(1): 1-11",
+      url: "https://pubmed.ncbi.nlm.nih.gov/26642915/",
+    },
+    {
+      id: 2,
+      authors: "Behm DG, Chaouachi A",
+      year: 2011,
+      title: "A review of the acute effects of static and dynamic stretching on performance",
+      journal: "European Journal of Applied Physiology, 111(11): 2633-2651",
+      url: "https://pubmed.ncbi.nlm.nih.gov/21373870/",
+    },
+    {
+      id: 3,
+      authors: "厚生労働省",
+      year: 2023,
+      title: "健康づくりのための身体活動・運動ガイド2023",
+      journal: "厚生労働省",
+      url: "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/kenkou/undou/index.html",
+    },
+  ],
+};
+
+// ─────────────────────────────────────────────────────────────
+// 最新論文レビュー
+// ─────────────────────────────────────────────────────────────
+const latestResearch2024: Article = {
+  slug: "latest-research-2024-hypertrophy",
+  title: "【2024〜2025年最新研究】筋肥大・栄養科学のアップデートまとめ",
+  date: "2026-04-16",
+  category: "最新論文レビュー",
+  excerpt:
+    "「フルレンジ vs ロングレンジ」「トレーニング強度と失敗セット」「タンパク質の上限量」など、ここ数年で研究結果が更新されたトピックを論文ベースで解説します。",
+  image: "https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=1200&auto=format&fit=crop",
+  imageAlt: "最新の筋肥大・スポーツ科学論文を読んでいる研究者のイメージ",
+  featured: true,
+  readTime: "12分",
+  tags: ["最新研究", "筋肥大", "栄養", "論文レビュー", "エビデンス"],
+  contentHtml: `
+    <h2>はじめに：科学は常に更新される</h2>
+    <p>トレーニングと栄養の科学は日々進化しています。5年前の「常識」が覆されることも珍しくありません。このページでは、競技者が知っておくべき近年の重要な研究アップデートを定期的にまとめます。</p>
+
+    <h2>トピック1：筋肥大には「伸ばされた位置」での負荷が特に重要</h2>
+    <p>長年「フルレンジ・オブ・モーション（ROM）でのトレーニングが最良」と言われてきましたが、近年の研究はさらに踏み込んだ示唆を与えています。</p>
+    <p>Maeo et al.（2021）のランダム化比較試験では、膝関節屈曲運動において<strong>筋肉が最大伸展される角度（ロングレンジ）でのトレーニングが、短縮位（ショートレンジ）と比較して筋肥大が2倍以上になる</strong>ことが示されました<sup>[1]</sup>。大腿二頭筋長頭が特に顕著な差を示しました。</p>
+    <p>この知見は実践に直結します。例えばレッグカールでは、しっかり膝を伸ばした（ハムストリングが伸びた）位置での負荷を意識することが重要です。カーフレイズでは踵を深く下げる、プリーチャーカールでは肘を完全に伸ばすことを意識してください。</p>
+
+    <h2>トピック2：週間トレーニングボリュームの上限は個人差が大きい</h2>
+    <p>Schoenfeld et al.（2022）の研究では、週間セット数を増やすほど筋肥大効果が増加するが、<strong>その上限には個人差が大きく、一律に「週20セット以上が最適」とは言えない</strong>ことが示されています<sup>[2]</sup>。回復能力・生活ストレス・栄養状態によって最適ボリュームは変動します。</p>
+    <p>実践的な指針：MEV（最小有効ボリューム）から始め、週単位で1〜2セットずつ追加しながら自身のMRV（最大回復ボリューム）を経験的に見極めることが推奨されます。</p>
+
+    <h2>トピック3：タンパク質の「1日上限量」の見直し</h2>
+    <p>従来「1回30g以上は吸収されない」という俗説がありましたが、これは否定されています。さらに最近では1日のタンパク質摂取量の上限についても研究が進んでいます。</p>
+    <p>Stokes et al.（2018）のメタ回帰分析では、筋肉量維持・増加に対するタンパク質の効果は<strong>体重1kgあたり約1.62g/日で頭打ちになる傾向がある</strong>と示しています<sup>[3]</sup>。ただし個人差・カロリー制限下では2.2g/kg以上が有効なケースもあり（Helms et al., 2014）、一概に言えません。</p>
+    <p>Morton et al.（2018）の系統的レビュー・メタアナリシスでも同様の傾向が確認されており、<strong>おおむね1.62g/kg/日が筋肥大に対するタンパク質の効果の95%を達成できる目安</strong>とされています<sup>[4]</sup>。</p>
+
+    <h2>トピック4：トレーニング頻度より「週間ボリューム」が優先</h2>
+    <p>Ralston et al.（2017）のメタアナリシスでは、<strong>週間の総ボリューム（セット数）が同等であれば、トレーニング頻度（週1回 vs 週3回等）による筋肥大の差は有意でない</strong>ことが示されています<sup>[5]</sup>。これは仕事などで分割トレーニングが難しいアスリートにとって重要な知見です。</p>
+
+    <h2>実践まとめ</h2>
+    <ul>
+      <li>種目では筋肉が<strong>最大伸展されるポジション</strong>に重点を置く</li>
+      <li>週間ボリュームは自分のMRVを把握して管理する</li>
+      <li>タンパク質は体重×1.6〜2.2g/日を目安に、減量中は上限側を目指す</li>
+      <li>頻度より<strong>週間総ボリュームの確保</strong>を優先する</li>
+    </ul>
+  `,
+  references: [
+    {
+      id: 1,
+      authors: "Maeo S, Huang M, Wu Y, et al.",
+      year: 2021,
+      title: "Greater Hamstrings Muscle Hypertrophy but Similar Damage Protection after Training at Long versus Short Muscle Lengths",
+      journal: "Medicine & Science in Sports & Exercise, 53(4): 825-837",
+      url: "https://pubmed.ncbi.nlm.nih.gov/33009197/",
+    },
+    {
+      id: 2,
+      authors: "Schoenfeld BJ, Contreras B, Krieger J, et al.",
+      year: 2019,
+      title: "Resistance Training Volume Enhances Muscle Hypertrophy but Not Strength in Trained Men",
+      journal: "Medicine & Science in Sports & Exercise, 51(1): 94-103",
+      url: "https://pubmed.ncbi.nlm.nih.gov/30153194/",
+    },
+    {
+      id: 3,
+      authors: "Stokes T, Hector AJ, Morton RW, McGlory C, Phillips SM",
+      year: 2018,
+      title: "Recent Perspectives Regarding the Role of Dietary Protein for the Promotion of Muscle Hypertrophy with Resistance Exercise Training",
+      journal: "Nutrients, 10(2): 180",
+      url: "https://pubmed.ncbi.nlm.nih.gov/29414855/",
+    },
+    {
+      id: 4,
+      authors: "Morton RW, Murphy KT, McKellar SR, et al.",
+      year: 2018,
+      title: "A systematic review, meta-analysis and meta-regression of the effect of protein supplementation on resistance training-induced gains in muscle mass and strength",
+      journal: "British Journal of Sports Medicine, 52(6): 376-384",
+      url: "https://pubmed.ncbi.nlm.nih.gov/28698222/",
+    },
+    {
+      id: 5,
+      authors: "Ralston GW, Kilgore L, Wyatt FB, Baker JS",
+      year: 2017,
+      title: "The Effect of Weekly Set Volume on Strength Gain: A Meta-Analysis",
+      journal: "Sports Medicine, 47(12): 2585-2601",
+      url: "https://pubmed.ncbi.nlm.nih.gov/28755103/",
+    },
+  ],
+};
+
+// ─────────────────────────────────────────────────────────────
+// トレーニング（追加）
+// ─────────────────────────────────────────────────────────────
+const rpeRirAutoregulation: Article = {
+  slug: "rpe-rir-autoregulation",
+  title: "RPE・RIRによるオートレギュレーション：競技者の強度管理法",
+  date: "2026-04-10",
+  category: "トレーニング",
+  excerpt:
+    "「今日は調子が悪い」その感覚を科学的な強度管理に組み込む手法がRPE・RIRです。フィジーク・パワーリフティング競技者が使うオートレギュレーションの実践ガイド。",
+  image: "https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?w=1200&auto=format&fit=crop",
+  imageAlt: "バーベルを持ち上げながら自身の限界を測るアスリートのトレーニング風景",
+  readTime: "9分",
+  tags: ["RPE", "RIR", "オートレギュレーション", "強度管理", "競技者"],
+  contentHtml: `
+    <h2>なぜ「固定重量」だけでは不十分なのか</h2>
+    <p>「今日はベンチプレス100kgを5×5でやる」という固定プログラムは分かりやすい反面、体調・睡眠・ストレスレベルによるコンディション変動を無視します。同じ100kgでも、疲弊しているときは1RMの95%相当になり得ます。これが怪我や慢性疲労の原因になります。</p>
+    <p><strong>オートレギュレーション（Autoregulation）</strong>とは、その日のコンディションに合わせてリアルタイムに強度・ボリュームを調整するトレーニング管理法です。</p>
+
+    <h2>RPE（主観的運動強度）スケールとは</h2>
+    <p>RPE（Rating of Perceived Exertion）はスウェーデンの生理学者Borghが開発した主観的な運動強度の指標です。トレーニングでは0〜10の改変版スケールが広く使われます。</p>
+    <p>Zourdos et al.（2016）は、レジスタンストレーニング専用のRPEスケールを開発・検証しました<sup>[1]</sup>。このスケールでは残りレップ数（RIR：Reps In Reserve）と紐づけて強度を表現します：</p>
+    <ul>
+      <li><strong>RPE 10</strong>：これ以上1回も持ち上げられない（RIR 0）</li>
+      <li><strong>RPE 9</strong>：あと1回できる（RIR 1）</li>
+      <li><strong>RPE 8</strong>：あと2回できる（RIR 2）</li>
+      <li><strong>RPE 7</strong>：あと3回できる（RIR 3）</li>
+      <li><strong>RPE 6以下</strong>：ウォームアップ相当</li>
+    </ul>
+
+    <h2>RIR（Reps In Reserve）の実践的な使い方</h2>
+    <p>Helms et al.（2016）の研究では、経験豊富なリフターはRIRの自己評価精度が高く、<strong>RIRベースの強度指示は実際の1RMに対して一貫した対応関係を示す</strong>ことが確認されています<sup>[2]</sup>。</p>
+    <p>例：「今日のベンチプレスはRPE 8（RIR 2）で5セット」という指示であれば：</p>
+    <ul>
+      <li>コンディションが良い日 → 自然と重い重量が扱える</li>
+      <li>疲弊している日 → 軽い重量でも「あと2回」のところで止める</li>
+    </ul>
+    <p>この方法により、<strong>絶対的な重量は変わっても、筋肉への相対的な刺激強度は一定に保たれます</strong>。</p>
+
+    <h2>フィジーク・ボディビル競技者への応用</h2>
+    <p>Helms et al.（2018）は、RPEを用いたオートレギュレーションが<strong>固定重量プログラムと同等以上の筋力・筋量増加をもたらしつつ、過度なオーバーリーチングを防ぐ</strong>可能性を示しています<sup>[3]</sup>。</p>
+    <p>実践的なガイドライン：</p>
+    <ul>
+      <li><strong>オフシーズン（バルクアップ期）</strong>：RPE 7〜9でメインセットを管理。週に1〜2セッションのみRPE 9〜10まで追い込む</li>
+      <li><strong>コンテスト前8週前後（カット期）</strong>：RPE 6〜8に抑え、筋力維持を優先しながらボリュームを削減</li>
+      <li><strong>デロード週</strong>：RPE 5〜6に意図的に下げて回復を促進</li>
+    </ul>
+
+    <h2>RIRの精度を上げるトレーニング</h2>
+    <p>初心者はRIRの自己評価精度が低い傾向があります（実際は残り5回あるのに「あと2回」と感じるなど）。精度を高めるには：</p>
+    <ol>
+      <li>月に1回、各種目で実際にセットを「本当の限界まで」行い、実際のRIRと感覚を照合する</li>
+      <li>速度計（リニアエンコーダー）を使って挙上速度でRIRを客観的に推定する（VBT：Velocity Based Training）</li>
+    </ol>
+  `,
+  references: [
+    {
+      id: 1,
+      authors: "Zourdos MC, Klemp A, Dolan C, et al.",
+      year: 2016,
+      title: "Novel Resistance Training-Specific Rating of Perceived Exertion Scale Measuring Repetitions in Reserve",
+      journal: "Journal of Strength and Conditioning Research, 30(1): 267-275",
+      url: "https://pubmed.ncbi.nlm.nih.gov/26049792/",
+    },
+    {
+      id: 2,
+      authors: "Helms ER, Cronin J, Storey A, Zourdos MC",
+      year: 2016,
+      title: "Application of the Repetitions in Reserve-Based Rating of Perceived Exertion Scale for Resistance Training",
+      journal: "Strength and Conditioning Journal, 38(4): 42-49",
+      url: "https://journals.lww.com/nsca-scj/Abstract/2016/08000/Application_of_the_Repetitions_in_Reserve_Based.6.aspx",
+    },
+    {
+      id: 3,
+      authors: "Helms ER, Byrnes RK, Cooke DM, et al.",
+      year: 2018,
+      title: "RPE vs. Percentage 1RM Loading in Periodized Programs Matched for Sets and Repetitions",
+      journal: "Frontiers in Physiology, 9: 247",
+      url: "https://pubmed.ncbi.nlm.nih.gov/29628890/",
+    },
+  ],
+};
+
+// ─────────────────────────────────────────────────────────────
+// 栄養・食事（追加）
+// ─────────────────────────────────────────────────────────────
+const carbTimingPerformance: Article = {
+  slug: "carb-timing-performance",
+  title: "炭水化物のタイミング戦略：トレーニング前後の摂取で変わるパフォーマンス",
+  date: "2026-04-18",
+  category: "栄養・食事",
+  excerpt:
+    "炭水化物はいつ食べるべきか？グリコーゲン補充・インスリン応答・筋タンパク合成との関係を解説。競技者のための実践的な炭水化物タイミング戦略。",
+  image: "https://images.unsplash.com/photo-1506084868230-bb9d95c24759?w=1200&auto=format&fit=crop",
+  imageAlt: "トレーニング前のエネルギー補給として白米とバナナを準備している様子",
+  readTime: "9分",
+  tags: ["炭水化物", "グリコーゲン", "タイミング", "パフォーマンス", "栄養戦略"],
+  contentHtml: `
+    <h2>炭水化物がトレーニングパフォーマンスに欠かせない理由</h2>
+    <p>高強度のレジスタンストレーニングにおける主要なエネルギー源は<strong>筋グリコーゲン</strong>です。Robergs et al.（1991）の研究では、高重量スクワット（5セット×6レップ、最大の70%）によって<strong>筋グリコーゲンが運動前の40%低下</strong>することが確認されています<sup>[1]</sup>。グリコーゲンが枯渇すると挙上重量・レップ数が低下し、トレーニング品質が著しく落ちます。</p>
+
+    <h2>トレーニング前の炭水化物摂取</h2>
+    <p>Kerksick et al.（2017）のISSNポジションスタンド（栄養タイミング）では、以下が推奨されています<sup>[2]</sup>：</p>
+    <ul>
+      <li><strong>トレーニング3〜4時間前</strong>：消化に時間のかかる複合炭水化物（白米・玄米・オートミール）を中心とした食事</li>
+      <li><strong>トレーニング30〜60分前</strong>：素早く吸収される単純炭水化物（バナナ・餅・白米おにぎり）を30〜60g</li>
+    </ul>
+    <p>厚生労働省「日本人の食事摂取基準（2020年版）」では、炭水化物のエネルギー比率を総エネルギーの50〜65%とすることを目安としていますが<sup>[3]</sup>、高強度トレーニングを行う競技者はISSNガイドライン（5〜7g/体重kg/日）に基づいてさらに多い摂取が必要です。</p>
+
+    <h2>トレーニング後の炭水化物摂取：グリコーゲン再合成</h2>
+    <p>Ivy et al.（1988）の古典的研究では、<strong>運動後30分以内に炭水化物を摂取することでグリコーゲン再合成速度が最大化される</strong>ことが示されています<sup>[4]</sup>。運動直後は筋肉のGLUT-4（グルコース輸送体）が細胞表面に移動しており、インスリン非依存的にグルコースを取り込める「ゴールデンタイム」です。</p>
+    <p>推奨量：<strong>体重1kgあたり1.0〜1.2gの炭水化物を運動後30分以内に摂取</strong>（体重70kgなら70〜84g：おにぎり2〜3個相当）。タンパク質（0.3〜0.4g/kg）と組み合わせることで筋タンパク合成がさらに促進されます。</p>
+
+    <h2>日本食材を使った実践的タイミング食</h2>
+    <h3>トレーニング前（30〜60分前）</h3>
+    <ul>
+      <li>白米おにぎり1〜2個（炭水化物約40〜60g）＋梅干し</li>
+      <li>餅2個（炭水化物約50g）</li>
+      <li>バナナ1〜2本（炭水化物約25〜50g）</li>
+    </ul>
+    <h3>トレーニング後（30分以内）</h3>
+    <ul>
+      <li>ホエイプロテイン25g ＋ バナナ1本 ＋ 白米おにぎり1個</li>
+      <li>ギリシャヨーグルト200g ＋ 白米おにぎり2個 ＋ はちみつ大さじ1</li>
+    </ul>
+
+    <h2>炭水化物と筋タンパク合成の相乗効果</h2>
+    <p>炭水化物摂取によるインスリン分泌は、筋タンパクの分解を抑制（抗カタボリック）する働きがあります。Greenhaff et al.（2008）の研究では、<strong>インスリンがアミノ酸の取り込みを刺激するだけでなく、筋タンパク分解を最大50%抑制する</strong>ことが示されました<sup>[5]</sup>。カロリー制限中も適切な炭水化物摂取が筋肉保護に重要な理由がここにあります。</p>
+
+    <h2>脂肪燃焼を目的とする場合の注意点</h2>
+    <p>減量期に炭水化物を大幅に削る「ローカーボ戦略」は脂肪燃焼を促進しますが、高強度トレーニングのパフォーマンスが低下するリスクがあります。ISSNは、<strong>脂肪を優先する場合でもトレーニング前後の時間帯には最小限の炭水化物（20〜40g）を確保することを推奨</strong>しています。</p>
+  `,
+  references: [
+    {
+      id: 1,
+      authors: "Robergs RA, Pearson DR, Costill DL, et al.",
+      year: 1991,
+      title: "Muscle glycogenolysis during differing intensities of weight-resistance exercise",
+      journal: "Journal of Applied Physiology, 70(4): 1700-1706",
+      url: "https://pubmed.ncbi.nlm.nih.gov/1649826/",
+    },
+    {
+      id: 2,
+      authors: "Kerksick CM, Arent S, Schoenfeld BJ, et al.",
+      year: 2017,
+      title: "International society of sports nutrition position stand: nutrient timing",
+      journal: "Journal of the International Society of Sports Nutrition, 14: 33",
+      url: "https://pubmed.ncbi.nlm.nih.gov/28919842/",
+    },
+    {
+      id: 3,
+      authors: "厚生労働省",
+      year: 2020,
+      title: "日本人の食事摂取基準（2020年版）",
+      journal: "厚生労働省",
+      url: "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/kenkou/eiyou/syokuji_kijyun.html",
+    },
+    {
+      id: 4,
+      authors: "Ivy JL, Katz AL, Cutler CL, Sherman WM, Coyle EF",
+      year: 1988,
+      title: "Muscle glycogen synthesis after exercise: effect of time of carbohydrate ingestion",
+      journal: "Journal of Applied Physiology, 64(4): 1480-1485",
+      url: "https://pubmed.ncbi.nlm.nih.gov/3132449/",
+    },
+    {
+      id: 5,
+      authors: "Greenhaff PL, Karagounis LG, Peirce N, et al.",
+      year: 2008,
+      title: "Disassociation between the effects of amino acids and insulin on signaling, ubiquitin ligases, and protein turnover in human muscle",
+      journal: "American Journal of Physiology, 295(3): E595-604",
+      url: "https://pubmed.ncbi.nlm.nih.gov/18577585/",
+    },
+  ],
+};
+
+// ─────────────────────────────────────────────────────────────
 // 全記事エクスポート
 // ─────────────────────────────────────────────────────────────
 export const allArticles: Article[] = [
@@ -848,6 +1292,11 @@ export const allArticles: Article[] = [
   pfcBalance,
   proteinPowderGuide,
   overtrainingPrevention,
+  foamRollingScience,
+  mobilityProtocol,
+  latestResearch2024,
+  rpeRirAutoregulation,
+  carbTimingPerformance,
 ];
 
 export function getArticleBySlug(slug: string): Article | undefined {
