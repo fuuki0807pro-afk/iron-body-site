@@ -34,6 +34,7 @@ export default function RootLayout({
             {/* デスクトップナビ */}
             <nav className="header-nav">
               <a href="/" className="nav-link">記事一覧</a>
+              <a href="/courses" className="nav-link" style={{color: 'var(--color-accent)', fontWeight: 700}}>学び舎</a>
               <a href="/#categories" className="nav-link">トレーニング</a>
               <a href="/#categories" className="nav-link">栄養</a>
               <a href="/#categories" className="nav-link">ライフスタイル</a>

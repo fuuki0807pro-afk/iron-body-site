@@ -1177,6 +1177,759 @@ input { font-family: inherit; }
 .article-card:nth-child(4) { animation: fadeUp 0.4s 0.20s ease both; }
 .article-card:nth-child(5) { animation: fadeUp 0.4s 0.25s ease both; }
 
+/* ── コース・学び舎 ───────────────────────────────────────── */
+
+/* カテゴリカラー追加 */
+:root {
+  --color-conditioning: #0d9488;
+  --color-research:     #b45309;
+  --color-dojo:         #1a2744;
+}
+.tag--conditioning  { background: #e0faf8; color: var(--color-conditioning); }
+.tag--research      { background: #fef3c7; color: var(--color-research); }
+
+/* ── 学び舎ヒーロー */
+.courses-hero {
+  background: var(--color-navy);
+  color: #fff;
+  padding: 4rem 0 3rem;
+}
+.courses-hero-eyebrow {
+  font-family: var(--font-en);
+  font-size: 0.72rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: #4ade80;
+  margin-bottom: 0.75rem;
+}
+.courses-hero-title {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.courses-hero-desc {
+  font-size: 0.96rem;
+  color: rgba(255,255,255,.62);
+  line-height: 1.9;
+  max-width: 560px;
+}
+
+/* ── コース一覧 */
+.courses-page .container { padding-top: 3rem; padding-bottom: 5rem; }
+.courses-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.course-card {
+  display: flex;
+  gap: 0;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border-light);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--transition), box-shadow var(--transition);
+  text-decoration: none;
+  color: inherit;
+}
+.course-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+}
+.course-card--coming {
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.course-card-left {
+  width: 120px;
+  flex-shrink: 0;
+  background: var(--color-navy);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.course-badge-preview {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #4ade80;
+  letter-spacing: 0.04em;
+  writing-mode: horizontal-tb;
+}
+.course-badge-preview--locked { color: rgba(255,255,255,.2); }
+
+.course-card-body {
+  padding: 1.75rem 2rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+.course-card-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+.course-level-tag {
+  display: inline-block;
+  padding: 0.15rem 0.6rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+  background: var(--color-accent-bg);
+  color: var(--color-accent-dark);
+  border-radius: 100px;
+  font-family: var(--font-en);
+}
+.course-time, .course-lessons-count {
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+  font-family: var(--font-en);
+}
+.course-card-title {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--color-text);
+  line-height: 1.5;
+}
+.course-card-desc {
+  font-size: 0.88rem;
+  color: var(--color-text-sub);
+  line-height: 1.75;
+}
+.course-card-footer { margin-top: auto; padding-top: 0.5rem; }
+.course-start-link {
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--color-accent);
+}
+.course-coming-label {
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+  font-family: var(--font-en);
+}
+
+/* ── コース詳細ページ */
+.course-detail-page { padding-bottom: 5rem; }
+.course-detail-hero {
+  background: var(--color-navy);
+  color: #fff;
+  padding: 2.5rem 0 3rem;
+}
+.course-detail-hero .breadcrumb { color: rgba(255,255,255,.4); margin-bottom: 1.5rem; }
+.course-detail-hero .breadcrumb-link { color: rgba(255,255,255,.5); }
+.course-detail-hero .breadcrumb-link:hover { color: #4ade80; }
+.course-detail-hero .breadcrumb-sep { color: rgba(255,255,255,.2); }
+.course-detail-hero .breadcrumb-current { color: rgba(255,255,255,.7); }
+
+.course-detail-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+}
+.course-detail-badge {
+  font-family: var(--font-display);
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #4ade80;
+  flex-shrink: 0;
+  line-height: 1;
+  padding-top: 0.25rem;
+}
+.course-detail-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+  flex-wrap: wrap;
+}
+.course-detail-title {
+  font-family: var(--font-display);
+  font-size: clamp(1.5rem, 3.5vw, 2.2rem);
+  font-weight: 700;
+  margin-bottom: 0.6rem;
+}
+.course-detail-desc {
+  font-size: 0.95rem;
+  color: rgba(255,255,255,.62);
+  line-height: 1.85;
+  max-width: 540px;
+}
+.course-completion-note {
+  margin-top: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  color: rgba(255,255,255,.5);
+  border: 1px solid rgba(255,255,255,.1);
+  border-radius: var(--radius-sm);
+  padding: 0.65rem 1rem;
+  width: fit-content;
+}
+.course-completion-note strong { color: #4ade80; }
+
+/* ── 進捗バー */
+.lesson-list-section { padding: 2.5rem 0; }
+.course-progress-bar-wrap { margin-bottom: 2rem; }
+.course-progress-bar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+.course-progress-label {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  font-family: var(--font-en);
+}
+.course-progress-fraction {
+  font-size: 0.82rem;
+  color: var(--color-text-sub);
+}
+.course-progress-track {
+  height: 6px;
+  background: var(--color-border);
+  border-radius: 100px;
+  overflow: hidden;
+}
+.course-progress-fill {
+  height: 100%;
+  background: var(--color-accent);
+  border-radius: 100px;
+  transition: width 0.4s ease;
+}
+
+/* ── コース完了バナー */
+.course-complete-banner {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  background: var(--color-navy);
+  color: #fff;
+  border-radius: var(--radius-md);
+  padding: 1.25rem 1.75rem;
+  margin-bottom: 2rem;
+}
+.course-complete-badge {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  color: #4ade80;
+  flex-shrink: 0;
+}
+.course-complete-title {
+  font-weight: 700;
+  font-size: 1rem;
+  margin-bottom: 0.15rem;
+}
+.course-complete-sub {
+  font-size: 0.85rem;
+  color: rgba(255,255,255,.55);
+}
+
+/* ── レッスン一覧 */
+.lesson-list-title {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--color-text);
+}
+.lesson-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+.lesson-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.1rem 1.25rem;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border-light);
+  border-radius: var(--radius-md);
+  transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
+  text-decoration: none;
+  color: inherit;
+}
+.lesson-item:not(.lesson-item--locked):hover {
+  transform: translateX(4px);
+  box-shadow: var(--shadow-sm);
+  border-color: var(--color-accent);
+}
+.lesson-item--done { border-left: 3px solid var(--color-accent); }
+.lesson-item--locked { opacity: 0.5; cursor: default; }
+
+.lesson-item-num {
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 2px solid var(--color-border);
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--color-text-sub);
+  font-family: var(--font-en);
+}
+.lesson-item-num--done {
+  background: var(--color-accent);
+  border-color: var(--color-accent);
+  color: #fff;
+}
+.lesson-item-num--locked {
+  border-style: dashed;
+}
+
+.lesson-item-body { flex: 1; }
+.lesson-item-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--color-text);
+  line-height: 1.5;
+  margin-bottom: 0.2rem;
+}
+.lesson-item-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+.lesson-item-time, .lesson-item-quiz {
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+  font-family: var(--font-en);
+}
+
+.lesson-item-status {
+  font-size: 0.82rem;
+  color: var(--color-text-muted);
+  flex-shrink: 0;
+}
+.lesson-item-status--done {
+  color: var(--color-accent);
+  font-weight: 700;
+}
+.lesson-item-status--locked { color: var(--color-border); }
+
+/* ── レッスンページ */
+.lesson-page { padding-bottom: 5rem; }
+.lesson-breadcrumb { padding: 1.1rem 0; }
+
+.lesson-header {
+  background: var(--color-navy);
+  color: #fff;
+  padding: 2.5rem 0 2.5rem;
+  margin-bottom: 3rem;
+}
+.lesson-header-meta {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.75rem;
+}
+.lesson-number-badge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  background: rgba(74,222,128,.15);
+  color: #4ade80;
+  border-radius: 100px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  font-family: var(--font-en);
+  letter-spacing: 0.06em;
+}
+.lesson-read-time {
+  font-size: 0.8rem;
+  color: rgba(255,255,255,.4);
+  font-family: var(--font-en);
+}
+.lesson-title {
+  font-family: var(--font-display);
+  font-size: clamp(1.4rem, 3.5vw, 2.2rem);
+  font-weight: 700;
+  line-height: 1.4;
+  margin-bottom: 0.75rem;
+}
+.lesson-excerpt {
+  font-size: 0.94rem;
+  color: rgba(255,255,255,.6);
+  line-height: 1.85;
+  max-width: 640px;
+}
+
+.lesson-layout {
+  display: grid;
+  grid-template-columns: 1fr 260px;
+  gap: 3rem;
+  align-items: start;
+}
+.lesson-main { min-width: 0; }
+
+/* ── サイドバー（レッスン） */
+.lesson-sidebar {
+  position: sticky;
+  top: 88px;
+}
+.lesson-sidebar-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border-light);
+  border-radius: var(--radius-md);
+  padding: 1.25rem;
+}
+.lesson-sidebar-link {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.55rem 0.5rem;
+  font-size: 0.85rem;
+  color: var(--color-text-sub);
+  border-bottom: 1px solid var(--color-border-light);
+  transition: color var(--transition);
+  text-decoration: none;
+}
+.lesson-sidebar-link:last-child { border-bottom: none; }
+.lesson-sidebar-link:hover { color: var(--color-accent); }
+.lesson-sidebar-link--active { color: var(--color-accent); font-weight: 700; }
+.lesson-sidebar-link--done { color: var(--color-accent-dark); }
+.lesson-sidebar-num {
+  width: 22px;
+  height: 22px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 1.5px solid var(--color-border);
+  font-size: 0.72rem;
+  font-weight: 700;
+  font-family: var(--font-en);
+}
+.lesson-sidebar-link--done .lesson-sidebar-num {
+  background: var(--color-accent);
+  border-color: var(--color-accent);
+  color: #fff;
+}
+.lesson-sidebar-link--active .lesson-sidebar-num {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+}
+
+/* ── レッスンナビゲーション */
+.lesson-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--color-border-light);
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.lesson-nav-btn {
+  display: inline-block;
+  padding: 0.65rem 1.25rem;
+  border: 1.5px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--color-text-sub);
+  transition: border-color var(--transition), color var(--transition);
+  text-decoration: none;
+}
+.lesson-nav-btn:hover { border-color: var(--color-accent); color: var(--color-accent); }
+.lesson-nav-btn--next {
+  background: var(--color-accent);
+  border-color: var(--color-accent);
+  color: #fff;
+}
+.lesson-nav-btn--next:hover {
+  background: var(--color-accent-dark);
+  border-color: var(--color-accent-dark);
+  color: #fff;
+}
+.lesson-nav-locked {
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+  font-style: italic;
+}
+
+/* ── クイズセクション */
+.quiz-section {
+  margin-top: 3.5rem;
+  background: var(--color-bg-alt);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 2rem 2.25rem;
+  border-top: 4px solid var(--color-navy);
+}
+.quiz-header { margin-bottom: 1.75rem; }
+.quiz-label {
+  display: inline-block;
+  font-family: var(--font-en);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--color-navy);
+  background: rgba(26,39,68,.08);
+  padding: 0.2rem 0.65rem;
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
+}
+.quiz-desc {
+  font-size: 0.88rem;
+  color: var(--color-text-sub);
+  line-height: 1.7;
+}
+
+.quiz-questions { display: flex; flex-direction: column; gap: 2rem; }
+
+.quiz-question {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border-light);
+  border-radius: var(--radius-md);
+  padding: 1.25rem 1.5rem;
+}
+.quiz-question--correct { border-left: 3px solid var(--color-accent); }
+.quiz-question--wrong   { border-left: 3px solid #ef4444; }
+
+.quiz-q-text {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--color-text);
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  display: flex;
+  gap: 0.5rem;
+}
+.quiz-q-num {
+  flex-shrink: 0;
+  font-family: var(--font-en);
+  font-weight: 700;
+  color: var(--color-accent);
+  font-size: 0.88rem;
+  padding-top: 0.1rem;
+}
+
+.quiz-options {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.quiz-option-label {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.65rem;
+  padding: 0.7rem 0.85rem;
+  border: 1.5px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  font-size: 0.88rem;
+  color: var(--color-text-sub);
+  transition: border-color var(--transition), background var(--transition);
+  line-height: 1.55;
+}
+.quiz-option-label:hover { border-color: var(--color-navy); color: var(--color-text); }
+.quiz-option-label--chosen { border-color: var(--color-navy); background: rgba(26,39,68,.04); color: var(--color-text); }
+.quiz-option-label--correct { border-color: var(--color-accent) !important; background: var(--color-accent-bg) !important; color: var(--color-accent-dark) !important; font-weight: 600; }
+.quiz-option-label--wrong   { border-color: #ef4444 !important; background: #fef2f2 !important; color: #b91c1c !important; }
+
+.quiz-radio { display: none; }
+.quiz-option-marker {
+  flex-shrink: 0;
+  width: 22px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 1.5px solid var(--color-border);
+  font-size: 0.72rem;
+  font-weight: 700;
+  font-family: var(--font-en);
+  color: var(--color-text-muted);
+}
+.quiz-option-label--correct .quiz-option-marker {
+  background: var(--color-accent);
+  border-color: var(--color-accent);
+  color: #fff;
+}
+.quiz-option-label--wrong .quiz-option-marker {
+  background: #ef4444;
+  border-color: #ef4444;
+  color: #fff;
+}
+
+.quiz-explanation {
+  margin-top: 0.85rem;
+  padding: 0.75rem 1rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.84rem;
+  line-height: 1.75;
+  display: flex;
+  gap: 0.5rem;
+}
+.quiz-explanation--correct { background: var(--color-accent-bg); color: var(--color-accent-dark); }
+.quiz-explanation--wrong   { background: #fef2f2; color: #991b1b; }
+.quiz-explanation-icon { flex-shrink: 0; }
+
+.quiz-submit-btn {
+  display: block;
+  margin-top: 1.75rem;
+  width: 100%;
+  padding: 0.9rem;
+  background: var(--color-navy);
+  color: #fff;
+  font-size: 0.95rem;
+  font-weight: 700;
+  border-radius: var(--radius-sm);
+  border: none;
+  cursor: pointer;
+  transition: background var(--transition);
+  font-family: var(--font-body);
+}
+.quiz-submit-btn:hover { background: var(--color-navy-mid); }
+.quiz-submit-btn:disabled { opacity: 0.4; cursor: not-allowed; }
+
+.quiz-result {
+  margin-top: 1.75rem;
+  padding: 1.5rem;
+  border-radius: var(--radius-md);
+  text-align: center;
+}
+.quiz-result--pass { background: var(--color-accent-bg); }
+.quiz-result--fail { background: #fef3c7; }
+.quiz-result-title {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--color-text);
+  margin-bottom: 0.3rem;
+}
+.quiz-result-sub { font-size: 0.88rem; color: var(--color-text-sub); margin-bottom: 1rem; }
+
+.quiz-retry-btn {
+  display: inline-block;
+  padding: 0.65rem 1.5rem;
+  background: var(--color-text);
+  color: #fff;
+  font-size: 0.88rem;
+  font-weight: 700;
+  border-radius: var(--radius-sm);
+  border: none;
+  cursor: pointer;
+  font-family: var(--font-body);
+  transition: background var(--transition);
+}
+.quiz-retry-btn:hover { background: var(--color-navy); }
+
+.quiz-passed-banner {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 3.5rem;
+  padding: 1.25rem 1.5rem;
+  background: var(--color-accent-bg);
+  border: 1px solid var(--color-accent);
+  border-radius: var(--radius-md);
+  flex-wrap: wrap;
+}
+.quiz-passed-icon {
+  width: 36px;
+  height: 36px;
+  background: var(--color-accent);
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+.quiz-passed-title { font-weight: 700; font-size: 0.95rem; color: var(--color-accent-dark); }
+.quiz-passed-sub   { font-size: 0.82rem; color: var(--color-text-muted); }
+.quiz-passed-nav   { margin-left: auto; }
+
+/* ── コース完了ページ */
+.complete-page {
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  padding: 5rem 0;
+}
+.complete-card {
+  max-width: 520px;
+  margin: 0 auto;
+  text-align: center;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border-light);
+  border-radius: var(--radius-lg);
+  padding: 3.5rem 2.5rem;
+  box-shadow: var(--shadow-md);
+}
+.complete-badge-large {
+  font-family: var(--font-display);
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: var(--color-accent);
+  margin-bottom: 1rem;
+}
+.complete-title {
+  font-family: var(--font-display);
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--color-text);
+  margin-bottom: 0.4rem;
+}
+.complete-course-name {
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+  margin-bottom: 1.25rem;
+}
+.complete-message {
+  font-size: 0.95rem;
+  color: var(--color-text-sub);
+  line-height: 1.85;
+  margin-bottom: 2rem;
+}
+.complete-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  align-items: center;
+}
+.complete-actions .btn-outline { padding: 0.65rem 2rem; }
+
+/* article-body の table 対応 */
+.article-body table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  font-size: 0.88rem;
+}
+.article-body th, .article-body td {
+  padding: 0.6rem 0.85rem;
+  border: 1px solid var(--color-border);
+  text-align: left;
+}
+.article-body th {
+  background: var(--color-bg-alt);
+  font-weight: 700;
+  color: var(--color-text);
+}
+
 /* ── レスポンシブ ─────────────────────────────────────────── */
 @media (max-width: 900px) {
   .featured-card { grid-template-columns: 1fr; }
@@ -1190,6 +1943,12 @@ input { font-family: inherit; }
   .footer-links { flex-wrap: wrap; gap: 2rem; }
 
   .related-grid { grid-template-columns: 1fr 1fr; }
+
+  /* コース・レッスン レスポンシブ */
+  .lesson-layout { grid-template-columns: 1fr; }
+  .lesson-sidebar { position: static; display: none; }
+  .course-card-left { width: 80px; }
+  .course-detail-header { flex-direction: column; gap: 1rem; }
 }
 
 @media (max-width: 640px) {

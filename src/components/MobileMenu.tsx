@@ -6,6 +6,7 @@ import { useState, useEffect } from "react";
 
 const navItems = [
   { label: "記事一覧", href: "/" },
+  { label: "🎓 学び舎", href: "/courses" },
   { label: "トレーニング", href: "/#categories" },
   { label: "栄養", href: "/#categories" },
   { label: "ライフスタイル", href: "/#categories" },
